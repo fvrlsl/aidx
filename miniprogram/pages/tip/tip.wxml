@@ -1,0 +1,6 @@
+<view class="pad">
+  <input class="card" placeholder="商家名（选填）" data-k="merchant_name_raw" bindinput="set" />
+  <input class="card" placeholder="链接" data-k="url" bindinput="set" />
+  <textarea class="card" placeholder="说明" data-k="text" bindinput="set" />
+  <view class="btn" bindtap="submit">提交</view>
+</view>

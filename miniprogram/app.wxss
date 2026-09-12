@@ -1,0 +1,20 @@
+page { background: #f5f6f5; color: #222; font-size: 28rpx; }
+.hero { background: linear-gradient(160deg, #1f8a4c, #2d9d5c); color: #fff; padding: 40rpx 32rpx 56rpx; }
+.hero-title { font-size: 44rpx; font-weight: 700; }
+.hero-sub { font-size: 26rpx; opacity: 0.9; margin-top: 8rpx; }
+.pad { padding: 24rpx 28rpx 40rpx; }
+.section { font-size: 30rpx; font-weight: 600; margin: 28rpx 0 16rpx; }
+.card { background: #fff; border-radius: 16rpx; padding: 24rpx; margin-bottom: 16rpx; }
+.row { display: flex; justify-content: space-between; align-items: center; }
+.name { font-size: 32rpx; font-weight: 600; }
+.meta { color: #888; font-size: 24rpx; margin-top: 8rpx; }
+.level { color: #fff; font-size: 22rpx; padding: 4rpx 12rpx; border-radius: 6rpx; }
+.level-benchmark { background: #1f8a4c; }
+.level-good { background: #3aa76d; }
+.level-neutral { background: #8c8c8c; }
+.level-disputed { background: #d98a1a; }
+.level-severe { background: #c2352b; }
+.level-insufficient { background: #a0a0a0; }
+.btn { background: #1f8a4c; color: #fff; text-align: center; padding: 22rpx; border-radius: 12rpx; margin-top: 16rpx; }
+.btn-ghost { background: #fff; color: #1f8a4c; border: 1rpx solid #1f8a4c; }
+.disclaimer { color: #999; font-size: 22rpx; line-height: 1.6; padding: 16rpx 8rpx 40rpx; }

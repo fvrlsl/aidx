@@ -1,0 +1,18 @@
+<view class="pad">
+  <view class="name">{{c.title}}</view>
+  <view class="meta">{{c.subtitle}}</view>
+  <view class="section">时间线</view>
+  <view class="card" wx:for="{{c.timeline}}" wx:key="date">
+    <view>{{item.date}}</view>
+    <view class="meta">{{item.text}}</view>
+  </view>
+  <view class="section">正文</view>
+  <view class="card">{{c.body}}</view>
+  <view class="section">关联商家</view>
+  <view class="card" wx:for="{{c.merchants}}" wx:key="id" data-id="{{item.id}}" bindtap="go">
+    <view class="row">
+      <view class="name">{{item.name}}</view>
+      <view class="level level-{{item.overall_level}}">{{item.overall_label}}</view>
+    </view>
+  </view>
+</view>
