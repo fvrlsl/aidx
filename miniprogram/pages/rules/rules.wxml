@@ -1,0 +1,1 @@
+<view class="pad"><view class="card">{{md}}</view></view>

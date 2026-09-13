@@ -1,0 +1,12 @@
+<view class="pad">
+  <view class="card">
+    <text data-v="benchmark" bindtap="setType">标杆榜 </text>
+    <text data-v="disputed" bindtap="setType">争议榜</text>
+  </view>
+  <view class="card" wx:for="{{items}}" wx:key="id" data-id="{{item.id}}" bindtap="go">
+    <view class="row">
+      <view class="name">#{{item.rank}} {{item.name}}</view>
+      <view class="level level-{{item.overall_level}}">{{item.overall_label}}</view>
+    </view>
+  </view>
+</view>

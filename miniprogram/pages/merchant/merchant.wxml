@@ -1,0 +1,38 @@
+<view class="hero">
+  <view class="hero-title">{{m.name}}</view>
+  <view class="hero-sub">{{m.industry}} · {{m.region}}</view>
+  <view class="level level-{{m.overall_level}}" style="margin-top:16rpx">平台评级 {{m.overall_label}}</view>
+</view>
+<view class="pad">
+  <view class="section">依据</view>
+  <view class="card" wx:for="{{ev}}" wx:key="id">
+    <view>{{item.polarity > 0 ? '正面' : '负面'}} · {{item.summary}}</view>
+    <view class="meta">{{item.dimension_label}} · {{item.source_level}}级 · {{item.source_name}} · {{item.event_date}}</view>
+  </view>
+  <view class="section">用户怎么看</view>
+  <view class="card">
+    <view class="meta">{{sum.disclaimer}}</view>
+    <view wx:for="{{sum.distribution}}" wx:key="level">{{item.label}} {{item.percent}}%</view>
+  </view>
+  <view class="section">打分</view>
+  <view class="card">
+    <view>
+      <text data-v="5" bindtap="setLevel">很好 </text>
+      <text data-v="4" bindtap="setLevel">推荐 </text>
+      <text data-v="3" bindtap="setLevel">还行 </text>
+      <text data-v="2" bindtap="setLevel">不推荐 </text>
+      <text data-v="1" bindtap="setLevel">极差</text>
+    </view>
+    <view class="meta" style="margin-top:12rpx">
+      <text data-v="customer" bindtap="setClaim">顾客 </text>
+      <text data-v="current_staff" bindtap="setClaim">现员工 </text>
+      <text data-v="former_staff" bindtap="setClaim">前员工 </text>
+      <text data-v="hearsay" bindtap="setClaim">听说的</text>
+    </view>
+    <input placeholder="可选事由" bindinput="setComment" />
+  </view>
+  <view class="btn" bindtap="submit">提交评分</view>
+  <view class="btn btn-ghost" bindtap="tip">提供线索</view>
+  <view class="btn btn-ghost" bindtap="feedback">我是商家 / 信息纠错</view>
+  <view class="btn btn-ghost" bindtap="rules">评级说明</view>
+</view>

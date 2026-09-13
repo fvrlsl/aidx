@@ -1,0 +1,6 @@
+<view class="pad">
+  <input class="card" placeholder="联系人" data-k="contact_name" bindinput="set" />
+  <input class="card" placeholder="电话" data-k="contact_phone" bindinput="set" />
+  <textarea class="card" placeholder="说明" data-k="content" bindinput="set" />
+  <view class="btn" bindtap="submit">提交</view>
+</view>

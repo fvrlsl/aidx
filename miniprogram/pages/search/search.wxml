@@ -1,0 +1,10 @@
+<view class="pad">
+  <input class="card" placeholder="蜜雪 / 胖东来 / 麦当劳" bindinput="onInput" focus />
+  <view class="card" wx:for="{{items}}" wx:key="id" data-id="{{item.id}}" bindtap="go">
+    <view class="row">
+      <view class="name">{{item.name}}</view>
+      <view class="level level-{{item.overall_level}}">{{item.overall_label}}</view>
+    </view>
+  </view>
+  <view class="btn" wx:if="{{suggest}}" bindtap="create">补充这个商家</view>
+</view>

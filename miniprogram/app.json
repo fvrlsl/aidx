@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/merchant/merchant",
+    "pages/case/case",
+    "pages/rankings/rankings",
+    "pages/cases/cases",
+    "pages/me/me",
+    "pages/rules/rules",
+    "pages/feedback/feedback",
+    "pages/tip/tip"
+  ],
+  "window": {
+    "navigationBarTitleText": "良心商家",
+    "navigationBarBackgroundColor": "#1f8a4c",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#f5f6f5"
+  },
+  "tabBar": {
+    "color": "#888888",
+    "selectedColor": "#1f8a4c",
+    "backgroundColor": "#ffffff",
+    "list": [
+      { "pagePath": "pages/index/index", "text": "首页" },
+      { "pagePath": "pages/rankings/rankings", "text": "榜单" },
+      { "pagePath": "pages/cases/cases", "text": "案例" },
+      { "pagePath": "pages/me/me", "text": "我的" }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

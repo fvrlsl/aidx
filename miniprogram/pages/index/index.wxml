@@ -1,0 +1,21 @@
+<view class="hero">
+  <view class="hero-title">良心商家</view>
+  <view class="hero-sub">查一查，这家店对员工怎么样</view>
+</view>
+<view class="pad">
+  <view class="card" bindtap="goSearch">搜索品牌 / 商家名</view>
+  <view class="section">本周热点案例</view>
+  <view class="card" wx:for="{{cases}}" wx:key="id" data-id="{{item.id}}" bindtap="goCase">
+    <view class="name">{{item.title}}</view>
+    <view class="meta">{{item.subtitle}}</view>
+  </view>
+  <view class="section">标杆商家</view>
+  <view class="card" wx:for="{{ranks}}" wx:key="id" data-id="{{item.id}}" bindtap="goMerchant">
+    <view class="row">
+      <view class="name">{{item.name}}</view>
+      <view class="level level-{{item.overall_level}}">{{item.overall_label}}</view>
+    </view>
+    <view class="meta">{{item.industry}} · {{item.region}}</view>
+  </view>
+  <view class="disclaimer">平台评级来自公开信息整理，用户评价未经核实。</view>
+</view>

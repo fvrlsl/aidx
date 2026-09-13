@@ -1,0 +1,9 @@
+<view class="hero">
+  <view class="hero-title">{{me.nickname || '小程序用户'}}</view>
+  <view class="hero-sub">已评 {{me.rating_count || 0}} 家 · 线索 {{me.tip_count || 0}} 条</view>
+</view>
+<view class="pad">
+  <view class="card" bindtap="rules">评级说明</view>
+  <view class="card" bindtap="tip">提交线索</view>
+  <view class="disclaimer">正式环境走 wx.login；本地可用 mock。</view>
+</view>

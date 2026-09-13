@@ -1,0 +1,6 @@
+<view class="pad">
+  <view class="card" wx:for="{{items}}" wx:key="id" data-id="{{item.id}}" bindtap="go">
+    <view class="name">{{item.title}}</view>
+    <view class="meta">{{item.subtitle}}</view>
+  </view>
+</view>
